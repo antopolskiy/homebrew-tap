@@ -5,21 +5,21 @@
 class KanbanMdTui < Formula
   desc "Interactive terminal UI for kanban-md boards"
   homepage "https://github.com/antopolskiy/kanban-md"
-  version "0.18.0"
+  version "0.18.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.18.0/kanban-md-tui_0.18.0_darwin_amd64.tar.gz"
-      sha256 "c30084ba141f417d996b4852af6edf5b56e10c70a1fb569ad21870730b0517e4"
+      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.18.1/kanban-md-tui_0.18.1_darwin_amd64.tar.gz"
+      sha256 "86c604125fed186d4fec5ae69dc94f907ac0ca4a9c043353bef28c13ed55454d"
 
       def install
         bin.install "kanban-md-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.18.0/kanban-md-tui_0.18.0_darwin_arm64.tar.gz"
-      sha256 "b53e1eb9e8dd727daec451f66e5142c4bd6e6b7c8fbc04045104e2d1427b4d7e"
+      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.18.1/kanban-md-tui_0.18.1_darwin_arm64.tar.gz"
+      sha256 "d3ab5bd52af95403f1cc3f921e07c734abd7817b7f11f013064017191e8d73ab"
 
       def install
         bin.install "kanban-md-tui"
@@ -29,15 +29,15 @@ class KanbanMdTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.18.0/kanban-md-tui_0.18.0_linux_amd64.tar.gz"
-      sha256 "7b5a2882e0ab65a6954734392f7c8d53be20857a102cc665046bdd6028ada7d5"
+      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.18.1/kanban-md-tui_0.18.1_linux_amd64.tar.gz"
+      sha256 "80bc1023dd78f95c290256c3d57eab541235ba8cbdc5ef851ee9b8a7543556ac"
       def install
         bin.install "kanban-md-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.18.0/kanban-md-tui_0.18.0_linux_arm64.tar.gz"
-      sha256 "0b8b4d248ad85758125988e59b7b2fee6fc5e45e46fb14b98431798187c297c5"
+      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.18.1/kanban-md-tui_0.18.1_linux_arm64.tar.gz"
+      sha256 "6db8aa413615f5c5f9f6926ca8642c9831ef231919174d4be8b148a18a291086"
       def install
         bin.install "kanban-md-tui"
       end
