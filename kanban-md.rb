@@ -5,13 +5,13 @@
 class KanbanMd < Formula
   desc "A file-based Kanban tool powered by Markdown"
   homepage "https://github.com/antopolskiy/kanban-md"
-  version "0.21.0"
+  version "0.21.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.21.0/kanban-md_0.21.0_darwin_amd64.tar.gz"
-      sha256 "e9d034e8cd98d68a1fa6d949006c7419150d276489b7785bc52410b6fc17cef0"
+      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.21.1/kanban-md_0.21.1_darwin_amd64.tar.gz"
+      sha256 "5c2f3066ab34209c85fdc3a8865e4ea615c15441c34322ac1d31dd99ddae500d"
 
       def install
         bin.install "kanban-md"
@@ -21,8 +21,8 @@ class KanbanMd < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.21.0/kanban-md_0.21.0_darwin_arm64.tar.gz"
-      sha256 "8dfee34f9b2afeed9faa18560e95ec4e6530900640cecf1995378ae8ddecbe05"
+      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.21.1/kanban-md_0.21.1_darwin_arm64.tar.gz"
+      sha256 "6d4fdfb849b672ffe7318256bff6413b60d9a11e6613bf24ed47d3037e528f8f"
 
       def install
         bin.install "kanban-md"
@@ -35,8 +35,8 @@ class KanbanMd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.21.0/kanban-md_0.21.0_linux_amd64.tar.gz"
-      sha256 "1a502aa2613fb407d0d5ae5cedcf2c19cbad497aab8e3a68996f66ee9b2e31de"
+      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.21.1/kanban-md_0.21.1_linux_amd64.tar.gz"
+      sha256 "3967eb642df8017ef1ffef9d793df4855cdc60605ffe71cb0b798c4ca7647ddc"
       def install
         bin.install "kanban-md"
         bin.install_symlink bin/"kanban-md" => "kbmd"
@@ -45,8 +45,8 @@ class KanbanMd < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.21.0/kanban-md_0.21.0_linux_arm64.tar.gz"
-      sha256 "beca163f1262533ca57463581a1b061c749d5482112d2b24ba45dff9e94b82ef"
+      url "https://github.com/antopolskiy/kanban-md/releases/download/v0.21.1/kanban-md_0.21.1_linux_arm64.tar.gz"
+      sha256 "744bcf0ce3d946b0a97a7729c6cbcc555bccd2d472f4e44fe0f4ffa3849a9dd0"
       def install
         bin.install "kanban-md"
         bin.install_symlink bin/"kanban-md" => "kbmd"
