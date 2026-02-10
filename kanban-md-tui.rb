@@ -7,7 +7,7 @@ class KanbanMdTui < Formula
   homepage "https://github.com/antopolskiy/kanban-md"
   url "https://github.com/antopolskiy/kanban-md/archive/refs/tags/v0.29.0.tar.gz"
   sha256 "6578501917494a634cb7164d674d28c052fd6efb7d841b15fc432ae71b0c5382"
-  version "0.29.0"
+  version "0.28.3"
   license "MIT"
 
   deprecate! date: "2026-02-10", because: "the TUI is now built into kanban-md; use 'kanban-md tui' instead"
